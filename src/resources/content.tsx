@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Irfan",
   lastName: "Putra",
   name: `Irfan Akbar Pramana Putra`,
-  role: "Software Engineer",
+  role: "Software Developer",
   avatar: "/images/avatar.jpg",
   email: "[EMAIL_ADDRESS]",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -54,19 +54,15 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "https://github.com/akbarirfanp",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
     </>
   ),
 };
@@ -122,9 +118,6 @@ const about: About = {
           </>,
           <>
             Integrated third-party services (Genesys) into the company's products
-          </>,
-          <>
-            Collaborated with frontend and backend teams to implement and maintain application features
           </>,
           <>
             Collaborated with frontend and backend teams to implement and maintain application features
