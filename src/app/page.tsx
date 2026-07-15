@@ -103,7 +103,6 @@ export default function Home() {
         <Projects range={[1, 1]} />
       </RevealFx>
       <Projects range={[2]} />
-      <Mailchimp />
     </Column>
   );
 }

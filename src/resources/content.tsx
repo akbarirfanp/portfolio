@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Blog, Gallery, Home, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
@@ -11,12 +11,6 @@ const person: Person = {
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
-};
-
-const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
 };
 
 const social: Social = [
@@ -110,6 +104,15 @@ const about: About = {
         company: "PT Solusi Tiga Selaras (Solutif)",
         timeframe: "February 2025 - February 2026 (1 year)",
         role: "Technical Consultant Intern",
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/gallery/solutif-01.jpg",
+            alt: "Solutif",
+            width: 16,
+            height: 9,
+          },
+        ],
         achievements: [
           <>
             Developed and integrated REST APIs between frontend (Nuxt) and backend services (Hypervel and Goravel)
@@ -129,15 +132,6 @@ const about: About = {
           <>
             Served as an IT Help Desk for one month, providing technical support
           </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       // {
@@ -177,45 +171,39 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        title: "Software Development",
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Nuxt",
+            icon: "nuxt",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "PostgreSQL",
+            icon: "postgresql",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "PHP (Laravel Framework)",
+            icon: "Laravel",
+          },
+          {
+            name: "Docker",
+            icon: "Docker",
+          },
+          {
+            name: "Golang (Goravel Framework)",
+            icon: "Goravel",
+          },
+          {
+            name: "MySQL",
+            icon: "MySQL",
+          },
+          {
+            name: "Vue.js",
+            icon: "Vue",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
     ],
@@ -291,4 +279,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work, gallery };
