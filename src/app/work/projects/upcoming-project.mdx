@@ -1,7 +1,7 @@
 ---
-title: "Upcoming Project - Microservice with Goravel, Kafka, and NextJS"
+title: "Upcoming Project - JadeERP"
 publishedAt: "Planning"
-summary: "Upcoming Project - Microservice with Goravel, Kafka, and NextJS"
+summary: "A microservices-based Enterprise Resource Planning (ERP) platform for building material distribution businesses."
 images:
   - "/images/projects/project-01/cover-02.jpg"
   - "/images/projects/project-01/image-03.jpg"
@@ -14,30 +14,56 @@ team:
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+JadeERP is a microservices-based Enterprise Resource Planning (ERP) application designed for building material and bulk commodity distribution businesses, including stone, sand, cement, gravel, and other construction materials.
 
-## Key Features
+The project focuses on modeling real-world enterprise workflows by separating each business capability into independent services. Instead of building a simple CRUD application, JadeERP aims to demonstrate scalable backend architecture using Domain-Driven Design (DDD), gRPC communication, and event-driven architecture.
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+The idea for JadeERP originated from casually watching videos about construction material distributors and quarry businesses. Exploring how these companies manage procurement, inventory, warehouse operations, deliveries, invoicing, and accounting inspired the development of a realistic ERP platform centered around those business processes.
 
-## Technologies Used
+## Planned Features
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Authentication Service**: Authentication, authorization, role-based access control (RBAC), permissions, and branch management.
+- **Master Data Service**: Centralized management of products, suppliers, customers, categories, units, and price lists.
+- **Procurement Service**: Handles purchase requests, purchase orders, supplier transactions, and goods receiving.
+- **Inventory Service**: Responsible for stock management, stock reservations, stock mutations, stock adjustments, and stock opname.
+- **Sales Service**: Manages quotations, sales orders, and customer sales workflows.
+- **Warehouse & Delivery Service**: Handles picking, packing, shipment preparation, delivery orders, and shipment tracking.
+- **Accounting Service**: Manages invoices, customer payments, accounts receivable, and financial records.
+- **Notification Service**: Sends email and WhatsApp notifications based on business events.
+- **Reporting Service**: Provides dashboards, operational reports, inventory analytics, sales reports, and financial summaries.
 
-## Challenges and Learnings
+## Technologies (Planned)
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+- **Go**: Primary programming language for all backend services.
+- **Gin**: API Gateway and external REST API.
+- **gRPC**: Synchronous communication between microservices.
+- **RabbitMQ**: Event-driven communication between services.
+- **PostgreSQL**: Database per service architecture.
+- **Redis**: Distributed caching and temporary data storage.
+- **Docker**: Containerization for every service.
+- **JWT Authentication**: Secure authentication and authorization.
 
-## Outcome
+## Challenges and Learning Objectives
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+One of the primary goals of JadeERP is learning how to design and implement a production-inspired distributed system rather than focusing solely on application features. The project explores service boundaries, inter-service communication, database isolation, asynchronous event processing, and scalable deployment strategies.
+
+Another challenge is modeling realistic ERP workflows while keeping each microservice independent. Business operations such as procurement, inventory management, warehouse processing, accounting, and reporting must communicate efficiently without becoming tightly coupled.
+
+## Expected Outcome
+
+JadeERP is intended to become a comprehensive portfolio project demonstrating enterprise software engineering practices and modern backend architecture.
+
+Upon completion, the project will showcase:
+
+- Domain-Driven Design (DDD)
+- Microservices Architecture
+- gRPC-based Service Communication
+- Event-Driven Architecture using RabbitMQ
+- Database per Service Pattern
+- Containerized Deployment with Docker
+- Enterprise-grade Backend Development using Go
 
 ---
 
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+> **Project Status:** 🚧 **Planning** — JadeERP is currently in the architecture and system design phase before implementation begins.
+
