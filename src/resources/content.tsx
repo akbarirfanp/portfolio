@@ -194,6 +194,18 @@ const about: About = {
             name: "Vue.js",
             icon: "Vue",
           },
+          {
+            name: "Rest API",
+            icon: "Rest API",
+          },
+          {
+            name: "Database Management",
+            icon: "Database Management",
+          },
+          {
+            name: "Git",
+            icon: "Git",
+          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
