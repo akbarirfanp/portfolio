@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Irfan",
   lastName: "Putra",
   name: `Irfan Akbar Pramana Putra`,
-  role: "Software Developer",
+  role: "",
   avatar: "/images/avatar.jpg",
   email: "[EMAIL_ADDRESS]",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -88,7 +88,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I'm a Computer Science graduate passionate about software development and problem-solving. I enjoy building reliable, user-focused applications and continuously improving my technical skills. I'm eager to learn, adapt to rapidly evolving technologies, and deliver meaningful software solutions that create real value
+        I'm a Computer Science fresh graduate passionate about software development and problem-solving. I enjoy building reliable, user-focused applications and continuously improving my technical skills. I'm eager to learn, adapt to rapidly evolving technologies, and deliver meaningful software solutions that create real value
       </>
     ),
   },
@@ -111,38 +111,19 @@ const about: About = {
         ],
         achievements: [
           <>
-            Developed and integrated REST APIs between frontend (Nuxt) and backend services (Hypervel and Goravel)
+            IT Help Desk (L1), providing technical support, troubleshooting hardware and software issues, resolving user incidents, and assisting with day-to-day IT operations.
           </>,
           <>
-            Designed system architecture using UML diagrams and Entity Relationship Diagrams (ERD)
+            Backend Support Developer (L3) — Handled backend troubleshooting, bug fixing, query optimization, and maintenance of core project services. Collaborated with the development team using Git for version control and issue resolution.
           </>,
           <>
-            Integrated third-party services (Genesys) into the company's products
+            Developed a Ticketing System Service as a Full Stack Developer, using Golang/Go Framework (Goravel), PHP Framework (Hypervel), Vue.js, and Nuxt in a microservices architecture shared database following Agile SDLC. Integrated frontend with backend REST APIs, designed UML and ERD documentation, and containerized services with Docker for local and dev environment.
           </>,
           <>
-            Collaborated with frontend and backend teams to implement and maintain application features
-          </>,
-          <>
-            Served as an IT Help Desk for one month, providing technical support
+            Integrated the Ticketing System with Genesys Cloud, enabling seamless communication and ticket management between the system and Genesys Cloud platform.
           </>,
         ],
       },
-      // {
-      //   company: "CV Bisma Cipta Solusi",
-      //   timeframe: "2021 - 2021",
-      //   role: "IT Staff",
-      //   achievements: [
-      //     <>
-      //       Developed a design system that unified the brand across multiple platforms, improving
-      //       design consistency by 40%.
-      //     </>,
-      //     <>
-      //       Led a cross-functional team to launch a new product line, contributing to a 15% increase
-      //       in overall company revenue.
-      //     </>,
-      //   ],
-      //   images: [],
-      // },
     ],
   },
   studies: {
@@ -150,7 +131,7 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Binus University 2022-2026",
+        name: "BINUS University, Jakarta 2022-2026",
         description: <>Bachelor of Computer Science (S.Kom)</>,
       },
       {
@@ -166,6 +147,10 @@ const about: About = {
       {
         title: "Software Development",
         tags: [
+          {
+            name: "C#",
+            icon: "C#",
+          },
           {
             name: "Nuxt",
             icon: "nuxt",
@@ -192,7 +177,7 @@ const about: About = {
           },
           {
             name: "Vue.js",
-            icon: "Vue",
+            icon: "Vue.js",
           },
           {
             name: "Rest API",
@@ -205,6 +190,14 @@ const about: About = {
           {
             name: "Git",
             icon: "Git",
+          },
+          {
+            name: "Go / Golang",
+            icon: "Go / Golang",
+          },
+          {
+            name: "C#",
+            icon: "C#",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -247,7 +240,7 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/solutif-01-cropped.jpg",
+      src: "/images/gallery/solutif-01.jpg",
       alt: "image",
       orientation: "vertical",
     },
